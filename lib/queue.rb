@@ -10,6 +10,7 @@ class Queue
   def size
     @queue.size
   end
+  alias_method :length, :size
   
   def push(myPush)
     @queue.push(myPush)

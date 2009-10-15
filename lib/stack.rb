@@ -10,6 +10,7 @@ class Stack
   def size
     @stack.size
   end
+  alias_method :length, :size
   
   def push(myPush)
     @stack.push(myPush)
