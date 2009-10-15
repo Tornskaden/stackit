@@ -1,6 +1,7 @@
 require 'stack'
 describe Stack do
   before { @stack = Stack.new }
+#  before { @stack = Array.new }
 
   describe "before pushing" do
     subject { @stack }
