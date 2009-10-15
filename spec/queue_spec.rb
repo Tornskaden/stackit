@@ -28,7 +28,6 @@ describe Queue do
   describe "after two pushes" do
     before { @queue.push("Hello, world").push("Hello, again") }
     subject { @queue }
-    it { should_not be_empty }
     it { should have(2).items }
     it "should return correct item when shifted" do
       subject.shift.should == "Hello, world"

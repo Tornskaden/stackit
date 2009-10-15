@@ -14,7 +14,6 @@ describe Stack do
   describe "after one push" do
     before { @stack.push("Hello, world") }
     subject { @stack }
-    it { should_not be_empty }
     it { should have(1).items }
     it "should return item when popped" do
       subject.pop.should == "Hello, world"
